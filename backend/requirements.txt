@@ -1,0 +1,11 @@
+fastapi
+uvicorn
+pydantic
+python-multipart
+yt-dlp
+httpx
+selenium
+webdriver-manager
+python-jose[cryptography]
+passlib[bcrypt]
+undetected-chromedriver
