@@ -1,0 +1,4 @@
+project_id = "qhtlzcvjlwterpvufdwj"
+
+[functions.fetch-hooks]
+verify_jwt = false
