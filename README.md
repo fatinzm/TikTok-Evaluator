@@ -4,7 +4,7 @@ _A Full-Stack  Project – FastAPI Backend + Vite/React Frontend_
 
 ---
 
-## 📌 Overview
+##  Overview
 
 This project is a full-stack application designed to fetch and evaluate the latest TikTok videos from any public profile.
 
@@ -17,7 +17,7 @@ It includes:
 
 ---
 
-## 📂 Project Structure
+##  Project Structure
 
 ```bash
 tiktok-project/
@@ -32,8 +32,10 @@ tiktok-project/
     ├── src/
     └── ...
 ```
+---
 
-##Technologies Used
+## Technologies Used
+
 🔹 Backend (FastAPI)
 
 Python 3.x
@@ -125,7 +127,7 @@ Frontend dev URL:
 
 👉 http://127.0.0.1:8080
 
-🔄 How the System Works
+## How the System Works
 
 The user enters a TikTok username in the frontend UI.
 
@@ -158,7 +160,7 @@ GPT evaluates whether each video matches the predefined criteria (e.g. hook stru
 
 The evaluation result is shown in the UI (e.g. “valid / invalid” or detailed reasoning).
 
-🧪 Example API Request (Backend)
+# Example API Request (Backend)
 Request
 {
   "username": "..."
@@ -168,7 +170,7 @@ Request
 The frontend then passes the Data on to GPT for evaluation.
 
 # Common Issues
-❗ ChromeDriver Version Mismatch
+ ChromeDriver Version Mismatch
 
 If you see an error like:
 
@@ -184,7 +186,7 @@ Adjust the undetected_chromedriver configuration, for example:
 
 driver = uc.Chrome(version_main=142)
 
-❗ TikTok Blocking Automation
+ TikTok Blocking Automation
 
 To reduce blocking risk, this project uses:
 
@@ -196,7 +198,7 @@ Custom user-agent
 
 Small delays between actions
 
-##📈 Future Improvements
+## Future Improvements
 
 Store evaluation results and metadata in a database (e.g. PostgreSQL).
 
