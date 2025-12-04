@@ -64,7 +64,7 @@ The frontend sends video metadata (e.g. duration, overlay text, type of content)
 
 GPT evaluates whether each video matches the desired formats (e.g. “Short Text + In-App Footage”, “Long Text”) according to defined rules.
 
-Note: The GPT integration is handled on the frontend side, after receiving the video URLs and dates from the backend.
+Note: The GPT integration is handled on the frontend side, after receiving the video URLs from the backend.
 
 ## Backend — How to Run
 
