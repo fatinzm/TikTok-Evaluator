@@ -31,8 +31,9 @@ tiktok-project/
     ├── vite.config.js
     ├── src/
     └── ...
+```
 
-Technologies Used
+##Technologies Used
 🔹 Backend (FastAPI)
 
 Python 3.x
@@ -63,7 +64,7 @@ GPT evaluates whether each video matches the desired formats (e.g. “Short Text
 
 Note: The GPT integration is handled on the frontend side, after receiving the video URLs and dates from the backend.
 
-⚙️ Backend — How to Run
+## Backend — How to Run
 
 Navigate into the backend folder:
 
@@ -97,7 +98,7 @@ Backend base URLs:
 
 👉 Swagger API Docs: http://127.0.0.1:8000/docs
 
-🌐 Frontend — How to Run
+## Frontend — How to Run
 
 Go to the frontend directory:
 
@@ -166,7 +167,7 @@ Request
 
 The frontend then passes the Data on to GPT for evaluation.
 
-🧩 Common Issues
+# Common Issues
 ❗ ChromeDriver Version Mismatch
 
 If you see an error like:
@@ -195,7 +196,7 @@ Custom user-agent
 
 Small delays between actions
 
-📈 Future Improvements
+##📈 Future Improvements
 
 Store evaluation results and metadata in a database (e.g. PostgreSQL).
 
