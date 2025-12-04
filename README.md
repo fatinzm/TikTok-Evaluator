@@ -1,20 +1,25 @@
-TikTok Video Evaluation Tool
+# TikTok Video Evaluation Tool
 
-A Full-Stack  Project – FastAPI Backend + Vite/React Frontend
+_A Full-Stack  Project – FastAPI Backend + Vite/React Frontend_
 
-📌 Overview
+---
+
+## 📌 Overview
 
 This project is a full-stack application designed to fetch and evaluate the latest TikTok videos from any public profile.
+
 It includes:
 
-A FastAPI backend that scrapes and downloads recent TikTok videos.
-
-A Vite + React frontend where the user enters a TikTok username.
-
-On the frontend, the downloaded videos are evaluated using GPT based on predefined rules and heuristics (e.g. hook text, duration, content style).
+- A **FastAPI backend** that scrapes and downloads recent TikTok videos.
+- A **Vite + React frontend** where the user enters a TikTok username.
+- On the **frontend**, the downloaded videos are **evaluated using GPT** based on predefined rules and heuristics (e.g. hook text, duration, content style).
 
 
-📂 Project Structure
+---
+
+## 📂 Project Structure
+
+```bash
 tiktok-project/
 │── backend/
 │   ├── main.py
@@ -27,7 +32,7 @@ tiktok-project/
     ├── src/
     └── ...
 
-🛠 Technologies Used
+Technologies Used
 🔹 Backend (FastAPI)
 
 Python 3.x
@@ -56,7 +61,7 @@ The frontend sends video metadata (e.g. duration, overlay text, type of content)
 
 GPT evaluates whether each video matches the desired formats (e.g. “Short Text + In-App Footage”, “Long Text”) according to defined rules.
 
-Note: The GPT integration is handled on the frontend side, after receiving the video URLs from the backend.
+Note: The GPT integration is handled on the frontend side, after receiving the video URLs and dates from the backend.
 
 ⚙️ Backend — How to Run
 
@@ -86,11 +91,11 @@ Run the FastAPI server:
 uvicorn main:app --reload 
 
 
-Backend base URL:
+Backend base URLs:
 
 👉 http://127.0.0.1:8000
 
-Swagger API Docs: 👉 http://127.0.0.1:8000/docs
+👉 Swagger API Docs: http://127.0.0.1:8000/docs
 
 🌐 Frontend — How to Run
 
@@ -158,22 +163,13 @@ Request
   "username": "..."
 }
 
-Response
-{
-  "status": "success",
-  "video_urls": [
-    "https://v16m-default.akamaized.net/.....",
-    "https://v16m-default.akamaized.net/....."
-  ]
-}
 
-
-The frontend then passes this data on to GPT for evaluation.
+The frontend then passes the Data on to GPT for evaluation.
 
 🧩 Common Issues
 ❗ ChromeDriver Version Mismatch
 
-If you see something like:
+If you see an error like:
 
 This version of ChromeDriver only supports Chrome version XXX
 Current browser version is YYY
@@ -200,8 +196,6 @@ Custom user-agent
 Small delays between actions
 
 📈 Future Improvements
-
-Move GPT evaluation to a backend endpoint (for better security of API keys).
 
 Store evaluation results and metadata in a database (e.g. PostgreSQL).
 
